@@ -11,6 +11,7 @@ import EventBind from './Components/EventBind';
 import ParentComponent from './Components/ParentComponent';
 import ChildComponent from './Components/ChildComponent';
 import UserGreeting from './Components/UserGreeting';
+import NameList from './Components/NameList';
 
 
 
@@ -19,7 +20,8 @@ import UserGreeting from './Components/UserGreeting';
 function App() {
   return (
     <div className="App">
-      <UserGreeting />
+      <NameList />
+      {/* <UserGreeting /> */}
       {/* <ParentComponent /> */}
       {/* <EventBind></EventBind> */}
       {/* <FunctionalClick />

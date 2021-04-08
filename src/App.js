@@ -12,7 +12,10 @@ import ParentComponent from './Components/ParentComponent';
 import ChildComponent from './Components/ChildComponent';
 import UserGreeting from './Components/UserGreeting';
 import NameList from './Components/NameList';
-
+import StyleSheet from './Components/StyleSheet';
+import Inline from './Components/Inline';
+import './Components/AppStyle.css'
+import styles from './Components/AppStyle.module.css'
 
 
 
@@ -20,7 +23,11 @@ import NameList from './Components/NameList';
 function App() {
   return (
     <div className="App">
-      <NameList />
+      <StyleSheet primary = {true} />
+      <Inline />
+      <h1 className='sucess'>sucess</h1>
+      <h1 className={styles.error}>module style</h1>
+      {/* <NameList /> */}
       {/* <UserGreeting /> */}
       {/* <ParentComponent /> */}
       {/* <EventBind></EventBind> */}

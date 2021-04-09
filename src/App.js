@@ -17,6 +17,12 @@ import Inline from './Components/Inline';
 import './Components/AppStyle.css'
 import styles from './Components/AppStyle.module.css'
 import Form from './Components/Form';
+import LifecycleA from './Components/LifecycleA';
+import FragmentDemo from './Components/FragmentDemo';
+import Table from './Components/Table';
+import ParentComp from './Components/ParentComp';
+import RefsDemo from './Components/RefsDemo';
+import FocusInput from './Components/FocusInput';
 
 
 
@@ -24,7 +30,13 @@ import Form from './Components/Form';
 function App() {
   return (
     <div className="App">
-      <Form />
+      <FocusInput />
+      {/* <RefsDemo /> */}
+      {/* <Table /> */}
+      {/* <ParentComp /> */}
+      {/* <FragmentDemo /> */}
+      {/* <LifecycleA /> */}
+      {/* <Form /> */}
       {/* <StyleSheet primary = {true} />
       <Inline />
       <h1 className='sucess'>sucess</h1>

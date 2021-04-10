@@ -23,6 +23,10 @@ import Table from './Components/Table';
 import ParentComp from './Components/ParentComp';
 import RefsDemo from './Components/RefsDemo';
 import FocusInput from './Components/FocusInput';
+import FRparentinput from './Components/FRparentinput';
+import PortalDemo from './Components/PortalDemo';
+import Hero from './Components/Hero';
+import ErrorBoundary from './Components/ErrorBoundary';
 
 
 
@@ -30,7 +34,16 @@ import FocusInput from './Components/FocusInput';
 function App() {
   return (
     <div className="App">
-      <FocusInput />
+      <ErrorBoundary>
+      <Hero heroName='bruce' />
+      </ErrorBoundary>
+      <ErrorBoundary>
+      <Hero heroName='joker' />
+      </ErrorBoundary>
+      
+      {/* <PortalDemo /> */}
+      {/* <FRparentinput /> */}
+      {/* <FocusInput /> */}
       {/* <RefsDemo /> */}
       {/* <Table /> */}
       {/* <ParentComp /> */}

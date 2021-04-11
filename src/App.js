@@ -33,6 +33,8 @@ import ClickCounterTwo from './Components/ClickCounterTwo';
 import HoverCounterTwo from './Components/HoverCounterTwo';
 import User from './Components/User';
 import RenPropsCounter from './Components/RenPropsCounter';
+import PostList from './Components/PostList';
+import PostForm from './Components/PostForm';
 
 
 
@@ -41,13 +43,17 @@ function App() {
   return (
     <div className="App">
 
-      <RenPropsCounter render={(count,incCount) => (
+      <PostForm />
+
+      {/* <PostList /> */}
+
+      {/* <RenPropsCounter render={(count,incCount) => (
         <ClickCounterTwo count={count} incCount={incCount} />
       )} /> 
 
       <RenPropsCounter render={(count,incCount) => (
         <HoverCounterTwo count={count} incCount={incCount} />
-      )} />
+      )} /> */}
 
       {/* <User render={(isLoggedIn)=> isLoggedIn ? "dragon" : "guest" } />
 

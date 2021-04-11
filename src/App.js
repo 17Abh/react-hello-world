@@ -27,6 +27,12 @@ import FRparentinput from './Components/FRparentinput';
 import PortalDemo from './Components/PortalDemo';
 import Hero from './Components/Hero';
 import ErrorBoundary from './Components/ErrorBoundary';
+import ClickCounter from './Components/ClickCounter';
+import HoverCounter from './Components/HoverCounter';
+import ClickCounterTwo from './Components/ClickCounterTwo';
+import HoverCounterTwo from './Components/HoverCounterTwo';
+import User from './Components/User';
+import RenPropsCounter from './Components/RenPropsCounter';
 
 
 
@@ -34,12 +40,31 @@ import ErrorBoundary from './Components/ErrorBoundary';
 function App() {
   return (
     <div className="App">
-      <ErrorBoundary>
+
+      <RenPropsCounter render={(count,incCount) => (
+        <ClickCounterTwo count={count} incCount={incCount} />
+      )} /> 
+
+      <RenPropsCounter render={(count,incCount) => (
+        <HoverCounterTwo count={count} incCount={incCount} />
+      )} />
+
+      {/* <User render={(isLoggedIn)=> isLoggedIn ? "dragon" : "guest" } />
+
+      <HoverCounterTwo />
+
+      <ClickCounterTwo /> */}
+
+       {/* <HoverCounter />
+
+      <ClickCounter name="dragon" />  */}
+
+      {/* <ErrorBoundary>
       <Hero heroName='bruce' />
       </ErrorBoundary>
       <ErrorBoundary>
       <Hero heroName='joker' />
-      </ErrorBoundary>
+      </ErrorBoundary> */}
       
       {/* <PortalDemo /> */}
       {/* <FRparentinput /> */}
